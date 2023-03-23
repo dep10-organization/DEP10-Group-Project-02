@@ -28,7 +28,6 @@ public class CustomerViewController {
 
     @FXML
     private TextField txtName;
-
     @FXML
     void btnDeleteOnAction(ActionEvent event) {
 
