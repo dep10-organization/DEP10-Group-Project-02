@@ -33,6 +33,10 @@ public class EmployeeViewController {
     private TextField txtName;
 
     public void initialize() {
+        tblEmployees.getColumns().get(0).setCellValueFactory(new PropertyValueFactory<>("id"));
+        tblEmployees.getColumns().get(1).setCellValueFactory(new PropertyValueFactory<>("name"));
+        tblEmployees.getColumns().get(2).setCellValueFactory(new PropertyValueFactory<>("address"));
+
 
     }
     @FXML
