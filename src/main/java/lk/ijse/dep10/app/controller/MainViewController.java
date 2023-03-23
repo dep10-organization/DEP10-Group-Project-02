@@ -35,8 +35,10 @@ public class MainViewController {
         Stage stage = (Stage) btnManageEmployees.getScene().getWindow();
         stage.setScene(scene);
         stage.setTitle("Manage Employees");
+        stage.setResizable(true);
         stage.show();
         stage.sizeToScene();
+        stage.setResizable(false);
         stage.centerOnScreen();
     }
 
