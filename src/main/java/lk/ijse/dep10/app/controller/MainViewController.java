@@ -6,7 +6,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
-import javafx.stage.Window;
 
 import java.io.IOException;
 
@@ -31,8 +30,14 @@ public class MainViewController {
     }
 
     @FXML
-    void btnManageEmployeesOnAction(ActionEvent event) {
-
+    void btnManageEmployeesOnAction(ActionEvent event) throws IOException {
+        Scene scene = new Scene(new FXMLLoader(getClass().getResource("/view/EmployeeView.fxml")).load());
+        Stage stage = (Stage) btnManageEmployees.getScene().getWindow();
+        stage.setScene(scene);
+        stage.setTitle("Manage Employees");
+        stage.show();
+        stage.sizeToScene();
+        stage.centerOnScreen();
     }
 
     @FXML

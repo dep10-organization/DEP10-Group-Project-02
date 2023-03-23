@@ -13,7 +13,7 @@
 
 <AnchorPane prefHeight="473.0" prefWidth="447.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep10.app.controller.TeacherViewController">
    <children>
-      <Button fx:id="btnStudent" layoutX="14.0" layoutY="20.0" mnemonicParsing="false" onAction="#btnStudentOnAction" prefHeight="40.0" prefWidth="128.0" text="+NEW STUDENT" />
+      <Button fx:id="btnNewTeacher" layoutX="14.0" layoutY="20.0" mnemonicParsing="false" onAction="#btnNewTeacherOnAction" prefHeight="40.0" prefWidth="128.0" text="+NEW TEACHER" />
       <Label layoutX="232.0" layoutY="29.0" text="MANAGE TEACHERS">
          <font>
             <Font name="System Bold Italic" size="18.0" />
@@ -50,8 +50,8 @@
       <TableView fx:id="tblTeachers" layoutX="28.0" layoutY="247.0" prefHeight="200.0" prefWidth="400.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
         <columns>
           <TableColumn prefWidth="75.0" text="ID" />
-          <TableColumn prefWidth="141.0" text="NAME" />
-            <TableColumn prefWidth="183.0" text="ADDRESS" />
+          <TableColumn prefWidth="163.0" text="NAME" />
+            <TableColumn prefWidth="188.0" text="ADDRESS" />
         </columns>
       </TableView>
    </children>

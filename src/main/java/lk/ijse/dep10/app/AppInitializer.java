@@ -4,8 +4,10 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import lk.ijse.dep10.app.db.DBConnection;
 
 import java.io.IOException;
+import java.sql.Connection;
 
 public class AppInitializer extends Application {
 
