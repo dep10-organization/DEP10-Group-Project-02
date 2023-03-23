@@ -3,6 +3,7 @@ package lk.ijse.dep10.app.controller;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.TreeTableView;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -11,6 +12,7 @@ import lk.ijse.dep10.app.model.Employee;
 
 public class EmployeeViewController {
 
+    public TableView<Employee> tblEmployees;
     @FXML
     private Button btnDelete;
 
@@ -20,8 +22,6 @@ public class EmployeeViewController {
     @FXML
     private Button btnSave;
 
-    @FXML
-    private TreeTableView<Employee> tblEmployee;
 
     @FXML
     private TextField txtAddress;
@@ -50,9 +50,8 @@ public class EmployeeViewController {
 
     }
 
-    @FXML
-    void tblEmployeeOnKeyReleased(KeyEvent event) {
+
+    public void tblEmployeesOnKeyReleased(KeyEvent keyEvent) {
 
     }
-
 }

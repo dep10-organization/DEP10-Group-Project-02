@@ -30,7 +30,7 @@ public class DBConnection {
             String username = configurations.getProperty("team.project2.username", "root");
             String password = configurations.getProperty("team.project2.password", "");
 
-            String url = "jdbc:mysql" + host + ":" + port + "/" + database + "?createDatabaseIfNotExist=true";
+            String url = "jdbc:mysql://" + host + ":" + port + "/" + database + "?createDatabaseIfNotExist=true";
             connection = DriverManager.getConnection(url, username, password);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
