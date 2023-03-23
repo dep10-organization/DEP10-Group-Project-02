@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.KeyEvent;
 import lk.ijse.dep10.app.model.Student;
 
@@ -30,6 +31,16 @@ public class StudentViewController {
 
     @FXML
     private TextField txtName;
+    public void initialize() {
+        tblStudent.getColumns().get(0).setCellValueFactory(new PropertyValueFactory<>("id"));
+        tblStudent.getColumns().get(1).setCellValueFactory(new PropertyValueFactory<>("name"));
+        tblStudent.getColumns().get(2).setCellValueFactory(new PropertyValueFactory<>("address"));
+
+        btnDelete.setDisable(true);
+
+
+
+    }
 
     @FXML
     void btnDeleteOnAction(ActionEvent event) {
