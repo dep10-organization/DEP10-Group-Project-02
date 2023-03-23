@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="473.0" prefWidth="447.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep10.app.Controller.TeacherViewController">
+<AnchorPane prefHeight="473.0" prefWidth="447.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep10.app.controller.TeacherViewController">
    <children>
       <Button fx:id="btnNewTeacher" layoutX="14.0" layoutY="20.0" mnemonicParsing="false" onAction="#btnNewTeacherOnAction" prefHeight="40.0" prefWidth="128.0" text="+NEW TEACHER" />
       <Label layoutX="232.0" layoutY="29.0" text="MANAGE TEACHERS">
