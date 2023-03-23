@@ -59,7 +59,7 @@ public class TeacherViewController {
 
     @FXML
     void btnSaveOnAction(ActionEvent event) {
-
+        Teacher teacher=new Teacher(Integer.valueOf(txtId.getText()),txtName.getText(),txtAddress.getText());
 
     }
 
