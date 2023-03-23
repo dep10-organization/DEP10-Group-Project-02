@@ -25,8 +25,9 @@ public class MainViewController {
     private Button btnManageTeachers;
 
     @FXML
-    void btnManageCustomersOnAction(ActionEvent event) {
-
+    void btnManageCustomersOnAction(ActionEvent event) throws IOException {
+        Stage stage = (Stage) btnManageCustomers.getScene().getWindow();
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/CustomerView.fxml"))));
     }
 
     @FXML
