@@ -64,6 +64,15 @@ public class TeacherViewController {
 
     @FXML
     void btnNewTeacherOnAction(ActionEvent event) {
+        txtId.clear();
+        txtName.clear();
+        txtAddress.clear();
+        tblTeachers.getSelectionModel().getSelectedItems().clear();
+
+        txtName.requestFocus();
+
+
+
 
 
     }
