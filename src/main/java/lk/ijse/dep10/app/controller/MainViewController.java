@@ -31,8 +31,16 @@ public class MainViewController {
     }
 
     @FXML
-    void btnManageEmployeesOnAction(ActionEvent event) {
-
+    void btnManageEmployeesOnAction(ActionEvent event) throws IOException {
+        Scene scene = new Scene(new FXMLLoader(getClass().getResource("/view/EmployeeView.fxml")).load());
+        Stage stage = (Stage) btnManageEmployees.getScene().getWindow();
+        stage.setScene(scene);
+        stage.setTitle("Manage Employees");
+        stage.setResizable(true);
+        stage.show();
+        stage.sizeToScene();
+        stage.setResizable(false);
+        stage.centerOnScreen();
     }
 
     @FXML
