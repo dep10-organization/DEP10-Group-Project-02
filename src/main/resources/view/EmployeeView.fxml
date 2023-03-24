@@ -10,14 +10,14 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="481.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep10.app.controller.EmployeeViewController">
+<AnchorPane prefHeight="481.0" prefWidth="659.0" stylesheets="@../css/EmployeeViewStyles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep10.app.controller.EmployeeViewController">
    <children>
       <Label alignment="CENTER" layoutX="219.0" layoutY="18.0" text="Manage Employees" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
          <font>
             <Font size="19.0" />
          </font>
       </Label>
-      <Button fx:id="btnNewEmployee" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnNewEmployeeOnAction" prefHeight="31.0" prefWidth="121.0" text="+New Employee" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0" />
+      <Button fx:id="btnNewEmployee" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnNewEmployeeOnAction" prefHeight="31.0" prefWidth="137.0" text="+New Employee" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0" />
       <VBox layoutX="76.0" layoutY="78.0" prefHeight="233.0" prefWidth="375.0" spacing="10.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="70.0">
          <children>
             <HBox spacing="10.0">
