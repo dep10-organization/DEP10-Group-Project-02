@@ -1,0 +1,23 @@
+#btnNewEmployee {
+    -fx-background-color: green;
+    -fx-text-fill: white;
+}
+
+#btnNewEmployee:hover {
+    -fx-background-color: rgba(0, 128, 0, 0.76);
+}
+
+#btnSave {
+    -fx-background-color: blue;
+    -fx-text-fill: white;
+}
+#btnSave:hover {
+    -fx-background-color: rgba(0, 0, 255, 0.75);
+}
+#btnDelete {
+    -fx-background-color: darkred;
+    -fx-text-fill: white;
+}
+#btnDelete:hover {
+    -fx-background-color: rgba(139, 0, 0, 0.7);
+}
